@@ -36,7 +36,7 @@ export default function AboutMe() {
           </div>
           
             <div className="h[25vh w-[50vw] -mt-8 flex font-bold text-lg mx-auto text-blue-700 underline hover:text-red-600">
-                <a className='mx-auto' href={Resum} target='_blank'>Dounload My Resum</a>
+                <a className='mx-auto' href={Resum} target='_blank'>Download My Resum</a>
             </div>
       </div>
     </div>
