@@ -21,13 +21,13 @@ export default function Navbar() {
           <Logo />
         </div>
 
-      <header className=' lg:visible lg:h-20 lg:top-0 lg:p-2  lg:mx-auto lg:flex lg:w-full lg:items-center lg:justify-between lg:sticky bg-black invisible ml-[20%] z-20 grid w-[80vw] h-[75vh]  '>
+      <header className=' lg:visible lg:h-[13vh] lg:top-0 lg:p-2  lg:mx-auto lg:flex lg:w-full lg:items-center lg:justify-between lg:sticky bg-black invisible ml-[20%] absolute  z-20 grid w-[80vw] h-[75vh]  '>
           <Logo />
           <Navlinks/>
       </header>
       <header
-        className={`bg-black z-20 grid w-[80vw] h-[75vh] transition-all duration-300 ease-in-out ${
-          open ? 'visible ml-[20%] -mt-[65vh]' : 'invisible ml-[100%]'
+        className={`lg:invisible bg-black absolute z-20 grid w-[80vw] h-[75vh] transition-all  duration-300 ease-in-out ${
+          open ? 'visible ml-[20%] mt-[15vh]' : 'invisible  ml-[100%]'
         }`}
       >
         
