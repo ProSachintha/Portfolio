@@ -14,7 +14,7 @@ export default function AboutMe() {
           </div>
           <div className='flex items-center justify-center mx-auto'>
             <div className="flex mt-8 items-center justify-between w-full lg:gap-16 h-[50vh] mx-auto lg:text-lg text-sm lg:font-bold font-extrabold  ">
-                <div className='h-[100%] w-[100%] h-[100%] w-[100%] lg:block flex flex-col  my-auto'>
+                <div className='h-[100%] w-[100%] lg:block flex flex-col  my-auto'>
                     <span >Name</span><br />
                     <span >Birth Day</span><br />
                     <span>Address</span><br />
@@ -36,7 +36,7 @@ export default function AboutMe() {
           </div>
           
             <div className="h[25vh w-[50vw] -mt-8 flex font-bold text-lg mx-auto text-blue-700 underline hover:text-red-600">
-                <a className='mx-auto' href={Resum} target='_blank'>Download My Resum</a>
+                <a className='mx-auto' href={Resum} target='_blank' >Download My Resum</a>
             </div>
       </div>
     </div>
