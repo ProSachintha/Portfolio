@@ -21,7 +21,7 @@ export default function Navbar() {
           <Logo />
         </div>
 
-      <header className=' lg:visible lg:h-[13vh]  lg:top-0 lg:p-2  lg:mx-auto lg:flex lg:w-full lg:items-center lg:justify-between lg:sticky bg-gray-700/40 invisible  absolute  z-20 grid   '>
+      <header className=' lg:visible lg:h-[13vh]  lg:top-0 lg:p-2  lg:mx-auto lg:flex lg:w-full lg:items-center lg:justify-between lg:sticky   invisible  absolute  z-20 grid   '>
           <Logo />
           <Navlinks/>
       </header>
