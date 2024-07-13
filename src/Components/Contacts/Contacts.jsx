@@ -50,7 +50,7 @@ export default function Contacts() {
           <form action="" ref={form} onSubmit={sendEmail} className='flex flex-col items-center justify-center '>
             <input type="email" name='user_email' className='w-[82%] p-2 my-2 ' placeholder='Email' required/>
             <input type="text" name='user_name' className='w-[82%] p-2 my-2' placeholder='Your Name'required/>
-            <textarea name="message"  rows={5} cols={52} className='p-2 my-2 w-[82%]' placeholder='Massege'required></textarea>
+            <textarea name="message"  rows={5} cols={52} className='p-2 my-2 w-[82%]' placeholder='Message'required></textarea>
             <input type="submit" value={'SEND'} className='cursor-pointer'/>
           </form>
         </div>
