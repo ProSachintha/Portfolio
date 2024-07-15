@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Navbar from '../Navbar/Navbar'
+import images from './images'
 export default function MyProject() {
   const [select,setselect]=useState(1)
 
@@ -19,8 +20,11 @@ export default function MyProject() {
             {/* Design Secton */}
             <div className={select===1 ? '  visible ' : 'invisible'}>              
               <div className='absolute flex flex-wrap justify-center w-full h-full gap-5 overflow-y-scroll scrollbar-none '>
-                <div className='w-[200PX] h-[150PX] border-dotted border-2 mt-2'>
-
+                <div className='w-[200PX] h-[150PX] border-dotted border-2 mt-2 flex overflow-hidden'>
+                  {images.map(item=>(
+                    <img src={item.image} alt=""  id={item.id} onClick={item.id}/>
+                  ))}
+                  
                 </div>               
                 <div className='w-[200PX] h-[150PX] border-dotted border-2 mt-2'>
 
