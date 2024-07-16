@@ -1,6 +1,13 @@
 import React, { useRef } from 'react'
 import emailjs from '@emailjs/browser';
 import Navbar from '../Navbar/Navbar'
+
+import Mobile from '../img/mobile.png';
+import Gmail from '../img/mail.png';
+import Linkedin from '../img/linkedin.png';
+import Github from '../img/github1.png';
+import Youtube from '../img/youtube.png';
+import Facebook from '../img/facebook.png';
 export default function Contacts() {
 
  
@@ -28,7 +35,16 @@ export default function Contacts() {
     <div>
       <Navbar/>
       <div className='w-full h-[97vh] bg-gradient-to-b from-green-400 to-blue-400 flex flex-col lg:flex-row'>
-        <div className='flex items-center justify-center gap-5 mt-32 lg:mx-auto lg:justify-center lg:text-lg lg:mt-10 lg:[&_span]:py-2'>
+        <div className='flex items-center justify-center gap-5 mt-32 lg:mx-auto lg:justify-center lg:text-lg lg:mt-10 lg:[&_span]:py-3'>
+          <div className='flex flex-col items-end [&_img]:w-7'>
+            <span><img src={Mobile} alt="" /></span>
+            <span><img src={Gmail} alt="" /></span>
+            <span><img src={Linkedin} alt="" /></span>
+            <span><img src={Github} alt="" /></span>
+            <span><img src={Youtube} alt="" /></span>
+            <span><img src={Facebook} alt="" /></span>
+            
+          </div>
           <div className='flex flex-col items-end '>
             <span>Mobile</span>
             <span>Email</span>
@@ -46,7 +62,7 @@ export default function Contacts() {
             <span><a href="https://web.facebook.com/sachintha_sandaruwan_gunawardhana">Sachintha Gunawardhana</a></span>
           </div>
         </div>
-        <div className='w-[90vw] h-[50vh] bg-black/50 mt-5 mx-auto lg:w-[30vw] lg:flex lg:items-center lg:justify-center lg:mt-32'>
+        <div className='w-[90vw] h-[50vh] bg-black/50 mt-5 mx-auto lg:w-[30vw] lg:flex lg:items-center lg:justify-center lg:mt-40'>
           <form action="" ref={form} onSubmit={sendEmail} className='flex flex-col items-center justify-center '>
             <input type="email" name='user_email' className='w-[82%] p-2 my-2 ' placeholder='Email' required/>
             <input type="text" name='user_name' className='w-[82%] p-2 my-2' placeholder='Your Name'required/>
