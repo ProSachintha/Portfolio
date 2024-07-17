@@ -10,7 +10,7 @@ export default function MyProject() {
   return (
     <div>
       <Navbar/>
-      <div className='w-full h-[97vh] bg-gradient-to-b from-green-400 to-blue-400 flex flex-col   '>
+      <div className='w-full h-[97vh] bg-gradient-to-br from-black to-gray-500 flex flex-col text-white  '>
           <div className='title w-[80vw] h-5  font-bold mx-auto  mt-auto flex justify-center gap-12  lg:my-5 lg:mt-24 '>
             <span onClick={()=>{tabselection(1)}} className={select===1 ? 'underline cursor-pointer' : 'cursor-pointer'}>Design</span>
             <span onClick={()=>{tabselection(2)}} className={select===2 ? 'underline cursor-pointer' : 'cursor-pointer'}>FrontEnd</span>

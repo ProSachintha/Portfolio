@@ -34,7 +34,7 @@ export default function Contacts() {
   return (
     <div>
       <Navbar/>
-      <div className='w-full h-[97vh] bg-gradient-to-b from-green-400 to-blue-400 flex flex-col lg:flex-row'>
+      <div className='w-full h-[97vh] bg-gradient-to-br from-black to-gray-500 flex flex-col lg:flex-row text-gray-400'>
         <div className='flex items-center justify-center gap-5 mt-32 lg:mx-auto lg:justify-center lg:text-lg lg:mt-10 lg:[&_span]:py-3'>
           <div className='flex flex-col items-end [&_img]:w-7'>
             <span><img src={Mobile} alt="" /></span>

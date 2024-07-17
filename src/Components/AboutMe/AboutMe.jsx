@@ -6,7 +6,7 @@ export default function AboutMe() {
   return (
     <div>
       <Navbar/>
-      <div className='w-full h-[97vh] bg-gradient-to-b from-green-400 to-blue-400 flex flex-col'>
+      <div className='w-full h-[97vh] bg-gradient-to-br from-black to-gray-500 flex flex-col text-gray-400'>
           <div className='lg:w-[50vw] w-[75vw] h-[25vh] font-bold flex text-justify justify-center items-center mx-auto lg:mt-16 mt-28'>
               <span >I am a person who likes to introduce new solutions and face challenges by thinking out of the box, able to work harmoniously and
                         efficiently with teams, learning quickly,adapting to changing environments with new knowledge.
@@ -35,7 +35,7 @@ export default function AboutMe() {
             </div>
           </div>
           
-            <div className="h[25vh w-[50vw] -mt-8 flex font-bold text-lg mx-auto text-blue-700 underline hover:text-red-600">
+            <div className="h[25vh w-[50vw] -mt-8 flex font-bold text-lg mx-auto text-black underline hover:text-red-600">
                 <a className='mx-auto' href={Resum} target='_blank' >Download My Resum</a>
             </div>
       </div>
