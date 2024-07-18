@@ -1,6 +1,10 @@
 import React, { useState } from 'react'
 import Navbar from '../Navbar/Navbar'
 import images from './images'
+import img1 from '../img/project/UI/ssg_mart/1.PNG'
+import img2 from '../img/project/UI/ssg_mart/1.PNG'
+import img3 from '../img/project/UI/ssg_mart/1.PNG'
+import img4 from '../img/project/UI/ssg_mart/1.PNG'
 export default function MyProject() {
   const [select,setselect]=useState(1)
 
@@ -21,29 +25,37 @@ export default function MyProject() {
             <div className={select===1 ? '  visible ' : 'invisible'}>              
               <div className='absolute flex flex-wrap justify-center w-full h-full gap-5 overflow-y-scroll scrollbar-none '>
                 <div className='w-[200PX] h-[150PX] border-dotted border-2 mt-2 flex overflow-hidden'>
-                  {images.map(item=>(
-                    <img src={item.image} alt=""  id={item.id} onClick={item.id}/>
-                  ))}
+                  <img src={img1} alt="" className=''/>
+                  <div className='w-[200PX] h-[150PX] bg-black/80  absolute flex flex-col items-center justify-center opacity-0 hover:opacity-100'>
+                    <h3 className='text-lg font-merriweather '>Project SSG Mart</h3>
+                    <h1 className='text-4xl font-extrabold'>-></h1>
+                  </div>
+                </div>               
+                <div className='w-[200PX] h-[150PX] border-dotted border-2 mt-2 flex overflow-hidden'>
+                  <img src={img2} alt=""/>
+                  <div className='w-[200PX] h-[150PX] bg-black/80  absolute flex flex-col items-center justify-center opacity-0 hover:opacity-100'>
+                    <h3 className='text-lg font-merriweather '>Project 2</h3>
+                    <h1 className='text-4xl font-extrabold'>-></h1>
+                    
+                  </div>
+                </div>               
+                <div className='w-[200PX] h-[150PX] border-dotted border-2 mt-2 flex  overflow-hidden'>
+                  <img src={img3} alt=""/>
                   
+                  <div className='w-[200PX] h-[150PX] bg-black/80  absolute flex flex-col items-center justify-center opacity-0 hover:opacity-100'>
+                    <h3 className='text-lg font-merriweather '>Project 3</h3>
+                    <h1 className='text-4xl font-extrabold'>-></h1>
+                  </div>
                 </div>               
-                <div className='w-[200PX] h-[150PX] border-dotted border-2 mt-2'>
-
+                <div className='w-[200PX] h-[150PX] border-dotted border-2 mt-2 flex  overflow-hidden'>
+                  <img src={img4} alt=""/>
+                  <div className='w-[200PX] h-[150PX] bg-black/80  absolute flex flex-col items-center justify-center opacity-0 hover:opacity-100'>
+                    <h3 className='text-lg font-merriweather '>Project 4</h3>
+                    <h1 className='text-4xl font-extrabold'>-></h1>
+                  </div>
                 </div>               
-                <div className='w-[200PX] h-[150PX] border-dotted border-2 mt-2'>
-
-                </div>               
-                <div className='w-[200PX] h-[150PX] border-dotted border-2 mt-2'>
-
-                </div>               
-                <div className='w-[200PX] h-[150PX] border-dotted border-2 mt-2'>
-
-                </div>               
-                <div className='w-[200PX] h-[150PX] border-dotted border-2 mt-2'>
-
-                </div>               
-                <div className='w-[200PX] h-[150PX] border-dotted border-2 mt-2'>
-
-                </div>               
+                              
+                              
               </div>              
             </div> 
             {/* FrontEnd Section */}
